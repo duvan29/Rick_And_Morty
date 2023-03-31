@@ -2,7 +2,7 @@ import style from './Nav.module.css'
 import { NavLink, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faRightFromBracket, faCircleUser } from '@fortawesome/free-solid-svg-icons'
-
+import logo from '../img/logo.png'
  const Nav = ({ logout }) => {
 
    const location = useLocation();
@@ -14,7 +14,7 @@ import { faHouse, faRightFromBracket, faCircleUser } from '@fortawesome/free-sol
 
    return (
      <nav className={style.nav}>
-         <div className={style.logo}><img src='logo.png' alt=''/></div>
+         <div className={style.logo}><img src={logo} alt=''/></div>
             <div className={style.items}>
                <NavLink clasName={style.navLink} to='/home'>
                   <div className={style.itemsDiv}><h2><FontAwesomeIcon icon={faHouse}/>  Home</h2></div>

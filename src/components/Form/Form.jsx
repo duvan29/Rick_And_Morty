@@ -3,6 +3,7 @@ import validate from '../../validation';
 import style from './Form.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser, faLock, faRightToBracket, faEyeSlash, faEye} from '@fortawesome/free-solid-svg-icons'
+import form from '../img/form.png' 
 
 const Form = ({login}) => {
 
@@ -43,7 +44,7 @@ const Form = ({login}) => {
 
     return (
         <div>
-        <div className={style.logo}><img src='form.png' alt=''/></div>
+        <div className={style.logo}><img src={form} alt=''/></div>
         <div className={style.formularioContent}>
             
             <form className={style.formulario} onSubmit={handleSubmit}>
