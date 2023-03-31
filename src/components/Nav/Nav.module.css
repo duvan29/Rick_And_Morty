@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://use.typekit.net/zoz7gnu.css');
 
+.linkMenu{
+    text-decoration: none;
+}
+
 .nav{
     width: 100%;
     display: flex;
@@ -9,6 +13,7 @@
     justify-content: space-between;
     padding: 0px;
 }
+
 .logo img{
     margin-left: 60px;
     width: auto;
@@ -18,10 +23,7 @@
 .items{
     margin-right: 50px;
     display: flex; 
-    text-decoration: none;
 }
-
-
 
 .items .itemsDiv h2{
     font-size: 20px;

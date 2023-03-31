@@ -4,6 +4,12 @@
  @import url('https://use.typekit.net/zoz7gnu.css');
  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Rubik+Iso&display=swap');
  
+
+ .fondo{
+    height: 100vh;
+    background:  url('https://vidcdn.123rf.com/450nwm/billbell1960/billbell19601406/billbell1960140600098.jpg');
+ }
+
  .formularioContent {
         position: relative;
         background: #566B73;
@@ -112,6 +118,9 @@
     }
     .formP{
         font-size: 10px;
+    }
+    .formularioContent{
+        margin-bottom: 20px;
     }
     
 }

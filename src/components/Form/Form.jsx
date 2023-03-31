@@ -43,7 +43,7 @@ const Form = ({login}) => {
 
 
     return (
-        <div>
+        <div className={style.fondo}> 
         <div className={style.logo}><img src={form} alt=''/></div>
         <div className={style.formularioContent}>
             

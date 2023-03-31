@@ -106,4 +106,16 @@
     padding: 10px 9px 8px 10px;
 }
 
+@media only screen and (max-width: 800px){
+    .cardDiv {
+        height: 480px;
+        width: 350px;
+    }
+    .cardName{
+        margin-top: 50px;
+        margin-bottom: -10px;
+        
+    }
+}
+
 
