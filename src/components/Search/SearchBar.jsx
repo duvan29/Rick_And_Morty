@@ -29,17 +29,6 @@ const location = useLocation();
          <br></br>
             <div className={style.wrapper}>
 
-               <Link to='/favorites'>
-               <div className={style.iconRandom}>
-                     <div className={style.tooltip}>
-                        Favoritos
-                     </div>
-                     <div className={style.randomButonIcon}>
-                        <FontAwesomeIcon icon={faHeart}/>
-                     </div>
-               </div>
-               </Link>
-
                <div className={style.iconRandom}>
                   <div className={style.tooltip}>
                      Random
