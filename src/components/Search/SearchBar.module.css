@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Get+Schwifty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://use.typekit.net/zoz7gnu.css');
+
+.search{
+    left: 30px;
+    margin-top: 30px;
+    position: relative;
+    padding: 5px;
+    display: inline-flex;
+}
+
+.search input{
+    margin: 0 -65px;
+    width: 400px;
+    height: 55px;
+    padding: 0 40px;
+    font-size: 25px;
+    color: #000;
+    outline: none;
+    border: 4px solid #D99748;
+    border-radius: 30px;
+    font-family: "vox", sans-serif;
+}
+
+.buscarButton {
+    bottom: 5px;
+    position: relative;
+    background: #D99748;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.iconRandom{
+    display: flex;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+    z-index: 2;
+}
+
+.randomButonIcon {
+    margin-bottom: 80px;
+    position: relative;
+    background: #D99748;
+    top: 60px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.tooltip{
+    position: absolute;
+    background:#D99748;
+    top: 10px;
+    font-size: 20px;
+    font-family: "vox", sans-serif;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.26,1.55);
+}
+
+.iconRandom:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.tooltip::before{
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: #D99748;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.goTop {
+    position: fixed;
+    bottom: 100px;
+    right: 100%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #D99748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.faAngleUp{
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 800px){
+    
+    .tooltip{
+        opacity: 1;
+    }
+    .iconRandom{
+        margin: 0 40px;
+    }
+}
+
+
+

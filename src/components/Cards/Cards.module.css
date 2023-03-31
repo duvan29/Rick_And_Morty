@@ -1,0 +1,15 @@
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 800px){
+    .cardContainer{
+        margin: 20px;
+    }
+}

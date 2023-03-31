@@ -1,0 +1,27 @@
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.textFavoritos{
+    font-size: 25px;
+    font-family: "vox", sans-serif;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.filterOrder{
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 800px){
+    .cardContainer{
+        margin: 20px;
+    }
+}
+

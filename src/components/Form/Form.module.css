@@ -1,0 +1,118 @@
+ /* Estilos para el formulario */ 
+ @import url('https://fonts.googleapis.com/css2?family=Get+Schwifty&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://use.typekit.net/zoz7gnu.css');
+ @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Rubik+Iso&display=swap');
+ 
+ .formularioContent {
+        position: relative;
+        background: #566B73;
+        width: 30%;
+        margin: -50px auto;
+        padding: 30px;
+        border: 4px solid #D99748;
+        border-radius: 10px;
+        z-index: 100;
+    }
+
+    .logo img {
+        height: 300px;
+        width: auto;
+        position: relative;
+    }
+
+
+.formLabel {
+        font-weight: bold;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 50px;
+        text-align: center;
+        border-radius: 10px;
+        color: #D99748;
+        margin: 5px;
+        opacity: 100%;
+    }
+
+.formInput {
+    position: relative;
+    font-family: "vox", sans-serif;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid #D99748;
+    font-size: 25px;
+    margin: 20px -45px 20px -50px;
+}
+
+.formInput2 {
+    position: relative;
+    font-family: "vox", sans-serif;
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid #D99748;
+    font-size: 25px;
+    margin: 20px -18px 20px -50px;
+}
+
+.formButton {
+    background-color: #D99748;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 30px;
+  }
+  
+  .formButton:hover {
+    font-size: 27px;
+    background-color: #eb8e1e;
+  }
+
+  .formP {
+    margin: 0;
+    font-size: 15px;
+    color: #ff0000;
+    font-family: "vox", sans-serif;
+    margin: 1px;
+}
+
+.inputIconEye, .inputIconUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    .formularioContent {
+        width: 70%;
+        margin: -40px auto;
+        padding: 30px;
+    }
+    .logo img{
+        height: 200px;
+    }
+    .formInput {
+        font-size: 15px;
+    }
+    .formButton{
+        font-size: 20px;
+    }
+    .formInput, .formInput2{
+        font-size: 15px;
+    }
+    .formP{
+        font-size: 10px;
+    }
+    
+}
+ 

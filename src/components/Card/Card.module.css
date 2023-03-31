@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Get+Schwifty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://use.typekit.net/zoz7gnu.css');
+
+.imgCard {
+    width: 50%;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+    border:5px solid #D99748;
+    z-index: 100;
+}
+
+.cardDiv {
+    height: 420px;
+    width: 350px;
+    position: relative;
+    border: 2px solid #D99748;
+    border-radius: 2%;
+    background: #566B73;
+    padding: 1em;
+    margin: 20px;
+    color: #cecece;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardDiv::before{
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    top: 0px;
+    background: #cecece;
+    border-radius: 2% 2% 10% 10%;
+}
+
+.divX{
+    color: #D99748;
+    font-size: 25px;
+    transform: translateY(-30px) translateX(160px);
+    cursor: pointer;
+}
+
+.divX:hover {
+    color: red
+}
+
+.divX2{
+    font-size: 25px;
+    transform: translateY(-30px) translateX(150px);
+}
+
+.divCorazon{
+    color: #D99748;
+    font-size: 25px;
+    transform: translateY(-4px) translateX(-160px);
+    cursor: pointer;
+}
+
+.divCorazon:hover{
+    color: red;
+}
+
+.divCorazon2{
+    color: red;
+    font-size: 25px;
+    transform: translateY(-4px) translateX(-160px);
+    cursor: pointer;
+}
+.divCardName{
+    width: 100%;
+    z-index: 1000;
+}
+.cardName{
+    word-wrap: break-Word;
+    font-family: "vox", sans-serif;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    
+}
+
+.cardID{
+    font-family: "vox", sans-serif;
+    margin-top: 20px;
+}
+
+.masInfo{
+    justify-content: center;
+    color: #fff;
+    background: #D99748;
+    margin: 0px;
+    font-size: 30px;
+    border-radius: 15%;
+    padding: 10px 9px 8px 10px;
+}
+.masInfo:hover{
+    justify-content: center;
+    color: #D99748;
+    background: #fff;
+    margin: 0px;
+    font-size: 30px;
+    border-radius: 15%;
+    padding: 10px 9px 8px 10px;
+}
+
+
