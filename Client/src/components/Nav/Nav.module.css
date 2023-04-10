@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Get+Schwifty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://use.typekit.net/zoz7gnu.css');
+
+.linkMenu{
+    text-decoration: none;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.logo img{
+    position: relative;
+    margin-left: 60px;
+    width: auto;
+    height: 80px;
+}
+
+.items{
+    margin-right: -1100px;
+    display: flex; 
+}
+
+/* .ocltar{
+    font-size: 20px;
+    font-family: "vox", sans-serif;
+    margin: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+} */
+
+.items .itemsDiv{
+    font-size: 20px;
+    font-family: "vox", sans-serif;
+    margin: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.items .itemsDiv :hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: #D99748;
+    border-radius: 15px;
+}
+
+.menuBurger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 800px){
+
+    .menuBurger{
+        display: flex;
+        font-size: 50px;
+        z-index: 1000;
+    }
+
+    .nav{
+        
+        display: flex;
+        align-items: center;
+    }
+
+    .items{
+        margin: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #d99848a4;
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: calc(100vh);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;
+        padding: 0;
+    }
+
+    .ocltar{
+        transform: translateY(-4px) translateX(-400px);
+        color: #000;
+    }
+
+    .items .itemsDiv {
+        margin: 40px 0;
+        font-size: 40px;
+    }
+
+    .items .itemsDiv div{
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+    }
+
+    .logo img{
+        display: none;
+    }
+    
+    
+
+}
+
