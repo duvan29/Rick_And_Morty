@@ -13,9 +13,9 @@ const handleChange = (event) => idSet(event.target.value)
 const location = useLocation();
 
   // Si la ruta actual es '/', no mostramos la barra de navegación
-  if (location.pathname === "/about" || location.pathname === '/' || location.pathname === '/favorites') {
-    return null;
-  }
+//   if (location.pathname === "/about" || location.pathname === '/' || location.pathname === '/favorites') {
+//     return null;
+//   }
 
    return (
       <div> 
