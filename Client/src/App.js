@@ -19,8 +19,8 @@ export function App({ removeFav }) {
    const [characters, setCharacters] = useState([]);
    const navigate = useNavigate();
    const [access, setAccess] = useState(false);
-   const EMAIL = 'ejemplo@gmail.com';
-   const PASSWORD = 'unaPasswo1';
+   const EMAIL = 'duvan123@gmail.com';
+   const PASSWORD = 'duvan123';
 
    const onSearch = (id) => {
       
@@ -48,11 +48,21 @@ export function App({ removeFav }) {
       navigate(`/`);
    };
 
+   // const login = (userData) => {
+   //    if (userData.password === PASSWORD && userData.email === EMAIL) {
+   //       setAccess(true);
+   //       navigate('/home');
+   //    } else window.alert('El usuario o Constraseña es incorrecta')
+   // }
+
    const login = (userData) => {
-      if (userData.password === PASSWORD && userData.email === EMAIL) {
-         setAccess(true);
-         navigate('/home');
-      } else window.alert('El usuario o Constraseña es incorrecta')
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login/';
+      axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+         const { access } = data;
+         setAccess(data);
+         access && navigate('/home');
+      });
    }
 
    useEffect(() => {
