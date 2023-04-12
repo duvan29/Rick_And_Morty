@@ -1,9 +1,9 @@
 import React from 'react';
+import style from './About.module.css'
 
 const About = () => {
     return (
-        <div>
-            <h1>Hola MI amor 💖</h1>
+        <div >
         </div>
     );
 }

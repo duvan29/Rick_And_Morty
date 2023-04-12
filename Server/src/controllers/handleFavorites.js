@@ -6,13 +6,8 @@ let myFavorites = []
 // }
 
 const postFav = (req, res) => {
-    try{
-        const {id, name, status, species, gender, origin, image} = req.body;
-
-        if(!id || !name || !status || !species || !gender || !origin || !image) return res.status(404).json({message: "The require information is missing"});
-        if(myFavorites.includes(id)) return res.status(404).json({message: "This character is already belongs to your favorites"});
-
-        myFavorites.push({id, name, status, species, gender, origin, image});
+    try{    
+        myFavorites.push(req.body);
         return res.status(200).json(myFavorites);
 
     }catch(error) {res.status(404).json({message: error.message});};
