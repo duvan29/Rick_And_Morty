@@ -60,7 +60,7 @@ export function Card(props) {
    
    export function mapStateToProps(state) {
       return {
-         myFavorites: state.myFavorites
+         myFavorites: state.allCharacters
       }
    }
    

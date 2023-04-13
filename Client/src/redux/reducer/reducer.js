@@ -3,6 +3,7 @@ import {ADD_FAV, REMOVE_FAV, FILTER, ORDER} from '../actions/types'
 const initialState = {
     myFavorites: [],
     allCharacters: [],
+    filterGender: "",
 };
 
 
@@ -32,20 +33,23 @@ const rootReducer = (state = initialState, action) => {
         // REDUCER | REMOVE_FAV
         case REMOVE_FAV:
             return { ...state, 
-                myFavorites: action.payload,
+                myFavorites: state.filterGender === "" || state.filterGender === "All" ? action.payload : action.payload.filter((element) => element.gender === state.filterGender),
                 allCharacters: action.payload 
             };
 
         case FILTER:
             return{
                 ...state,
-                myFavorites: action.payload === 'All' ?  state.allCharacters : state.allCharacters.filter((char) => char.gender === action.payload)
+                myFavorites: action.payload === 'All'  ?  state.allCharacters : state.allCharacters.filter((char) => char.gender === action.payload),
+                filterGender: action.payload
             }
 
         case ORDER:
+            let newArray = state.allCharacters.filter((e) => e.gender === state.filterGender) 
+            if(newArray.length === 0) newArray = state.allCharacters
             return{
                 ...state,
-                myFavorites: action.payload === "A" ? state.allCharacters.sort((a, b) => a.id - b.id) : state.allCharacters.sort((a, b) =>  b.id - a.id)
+                myFavorites: action.payload === "A" ? newArray.sort((a, b) => a.id - b.id) : newArray.sort((a, b) =>  b.id - a.id)
             }
                             
         default:
@@ -53,7 +57,7 @@ const rootReducer = (state = initialState, action) => {
     }
 };
 
-export default rootReducer;
+export default rootReducer;
 
 /*export function mapStateToProps(state) {
    return {
