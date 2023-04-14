@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px;
+    z-index: 1000;
 }
 
 .logo img{
@@ -19,6 +20,7 @@
     margin-left: 60px;
     width: auto;
     height: 80px;
+    z-index: 1000;
 }
 
 .items{
@@ -39,6 +41,7 @@
 .item{
     margin-right: -1100px;
     display: flex; 
+    z-index: 1000;
 }
 
 .item .itemsDiv{
@@ -49,6 +52,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.5s ease;
+    z-index: 1000;
 }
 
 .item .itemsDiv :hover{

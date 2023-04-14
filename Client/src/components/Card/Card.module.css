@@ -27,6 +27,13 @@
     align-items: center;
 }
 
+.cardDiv:hover {
+    transform: translateY(-30px);
+    transition: 0.8s;
+    box-shadow: 0 10px 20px #d99848;
+}
+
+
 .cardDiv::before{
     content: "";
     position: absolute;

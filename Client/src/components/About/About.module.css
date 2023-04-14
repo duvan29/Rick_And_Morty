@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Get+Schwifty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://use.typekit.net/zoz7gnu.css');
+
+
+
+.container{
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #000;
+    z-index: 0;
+}
+
+.img img{
+    margin-top: 100px;
+    margin-left: 100px;
+    position: absolute;
+    width: auto;
+    height: 800px;
+    z-index: 1000;
+}
+
+.container2{
+    justify-content: center;
+    flex-direction: row;
+}
+  
+  .titulo {
+    margin-top: 35vh;
+    margin-right: 118vh;
+    color: #D99748;
+    font-size: 70px;
+    font-family: "vox", sans-serif;
+  }
+  
+  .contenido {
+    margin-right: 120vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .nombre {
+    color: #fff;
+    font-family: "vox", sans-serif;
+  }
+  
+  .descripcion {
+    margin-top: -30px;
+    margin-left: 126px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    color: #fff;
+    font-family: "vox", sans-serif;
+    text-align: left;
+    font-size: 25px;
+    display: flex;
+  }
+  .contenedorBotones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .botones {
+    display: flex;
+    background: #D99748;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    margin: 0 10px; 
+    padding: auto; 
+}
+
+.botones:hover{
+  background:#fff;
+  transition: 0.5s;
+}
+  
+  .botones a svg {
+    margin-top: 12px;
+    color: #fff;
+    width: auto;
+    height: 40px
+  }
+
+  .botones a svg:hover{
+    color: #D99748;
+    transition: 0.5s;
+  }
+
+  @media only screen and (max-width: 800px){
+    
+    .titulo {
+        font-size: 70px;
+        margin-top: 12vh;
+        margin-right: 150vh;
+        margin-left: 10vh;
+      }
+      .img img{
+        display: none;
+      }
+      .descripcion {
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-right: 200px;
+        margin-bottom: 50px;
+        font-size: 20px;
+      }
+      .contenedorBotones{
+        margin-left: -170px;
+      }
+  }
