@@ -41,13 +41,7 @@
     cursor: pointer;
 }
 
-.order svg{
-    transform: translateY(4px);
-    height: 30px;
-    width: auto;
-}
-
-.order2 svg{
+.order svg, .order2 svg{
     transform: translateY(4px);
     height: 30px;
     width: auto;
@@ -89,21 +83,18 @@
     z-index: 1;
 }
 
-
-
-
 .dropdown .options{
     font-family: "vox", sans-serif;
     position: absolute;
     width: 240px;
-    z-index: 100000;
+    z-index: 1000;
     background-color: #fff;
     color: #000;
     border-radius: 10px; 
     font-size: 20px;
     overflow: hidden;
-    /* display: none; */
-    margin-left: 13px;
+    margin-left: 16px;
+    margin-top: 0px;
 }
 
 .dropdown .options div{
@@ -126,15 +117,20 @@
 }
 
 @media only screen and (max-width: 800px){
+    
     .cardContainer{
         margin: 20px;
     }
 
     .textFavoritos{
-        font-size: 25px;
-        font-family: "vox", sans-serif;
-        margin-top: 0px;
+        font-size: 50px;
+        margin-top: -60px;
+        margin-bottom: 10px;
         color: #fff;
+    }
+    .dropdown::before{
+        margin-right: 100px;
+        z-index: 100;
     }
 }
 

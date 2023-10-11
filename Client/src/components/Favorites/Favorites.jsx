@@ -28,7 +28,7 @@ export default function Favorites() {
    <div>
       <div className={style.textFavoritos}>
             <h1>
-               Favoritos
+               Favorites
             </h1>
       </div>
       <div className={style.filterOrder}>

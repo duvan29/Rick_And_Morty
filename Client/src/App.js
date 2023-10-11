@@ -19,13 +19,10 @@ export function App({ removeFav }) {
    const [characters, setCharacters] = useState([]);
    const navigate = useNavigate();
    const [access, setAccess] = useState(false);
-   const EMAIL = 'duvan123@gmail.com';
-   const PASSWORD = 'duvan123';
-
    const onSearch = async (id) => {
       
       try {
-         const { data } = await axios(`http://localhost:3001/rickandmorty/character/${id}`)
+         const { data } = await axios(`https://server-rick-and-morty-7xlt.onrender.com/rickandmorty/character/${id}`)
          if (data.name) {
             if(characters.find(character => character.id === data.id))
                   window.alert(`ID ${data.id} ya existe`);
@@ -44,19 +41,6 @@ export function App({ removeFav }) {
                break;
          }
       }
-
-      // .then(({ data }) => {
-      //    if (data.name) {
-            
-      //       if(characters.find(character => character.id === data.id))
-      //          window.alert(`ID ${data.id} ya existe`);
-      //       else setCharacters((oldChars) => [...oldChars, data]);
-
-      //    } else if (!data.id) window.alert('ID vacio');
-      //    else {
-      //       window.alert('¡No hay personajes con este ID!');
-      //    }
-      // }).catch(() => alert(`Character ${id} not found`));
    };
 
    const onClose = (id) => {
@@ -69,27 +53,12 @@ export function App({ removeFav }) {
       navigate(`/`);
    };
 
-   // const login = (userData) => {
-   //    if (userData.password === PASSWORD && userData.email === EMAIL) {
-   //       setAccess(true);
-   //       navigate('/home');
-   //    } else window.alert('El usuario o Constraseña es incorrecta')
-   // }
 
-   // const login = (userData) => {
-   //    const { email, password } = userData;
-   //    const URL = 'http://localhost:3001/rickandmorty/login/';
-   //    axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
-   //       const { access } = data;
-   //       setAccess(data);
-   //       access && navigate('/home');
-   //    });
-   // }
 
    const login = async (userData) => {
       const { email, password } = userData;
       try {   
-         const URL = 'http://localhost:3001/rickandmorty/login/';
+         const URL = 'https://server-rick-and-morty-7xlt.onrender.com/rickandmorty/login/';
          const { data } = await axios(URL + `?email=${email}&password=${password}`);
          const { access } = data;
          setAccess(data);

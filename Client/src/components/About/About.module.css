@@ -80,6 +80,7 @@
 .botones:hover{
   background:#fff;
   transition: 0.5s;
+  
 }
   
   .botones a svg {
@@ -99,20 +100,21 @@
     .titulo {
         font-size: 70px;
         margin-top: 12vh;
-        margin-right: 150vh;
-        margin-left: 10vh;
+        margin-right: 152vh;
+        margin-left: 15vh;
       }
+
       .img img{
         display: none;
       }
       .descripcion {
         margin-top: 0px;
-        margin-left: 50px;
-        margin-right: 200px;
+        margin-left: 60px;
+        margin-right: 203px;
         margin-bottom: 50px;
-        font-size: 20px;
+        font-size: 25px;
       }
       .contenedorBotones{
-        margin-left: -170px;
+        margin-left: -140px;
       }
   }
